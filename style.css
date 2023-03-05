@@ -332,7 +332,10 @@ li{
     to {opacity: 1}
   }
 @media screen and (max-width: 800px) {
-
+.topContainer{
+    display: flex;
+    flex-direction: column;
+}
 
     .address{
         display: none;
