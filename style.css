@@ -71,8 +71,9 @@ body{
     width: 100%
  }
 .chromaLogoImg{
-
+display: flex;
   max-width: 400px;
+
 } 
 .contactInfoDiv{
     text-align: center;
@@ -130,7 +131,9 @@ li{
      margin: 1px;
  }
  .imageDiv{
+    display: flex;
     text-align: center;
+    justify-content: center;
  }
  .section{
     margin: 0px 20vw 0px 20vw;
@@ -336,7 +339,9 @@ li{
     display: flex;
     flex-direction: column;
 }
-
+.parallax {  
+    min-height: 80vh;
+}
     .address{
         display: none;
     }
