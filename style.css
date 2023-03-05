@@ -340,7 +340,7 @@ li{
     flex-direction: column;
 }
 .parallax {  
-    min-height: 80vh;
+    min-height: 50vh;
 }
     .address{
         display: none;
