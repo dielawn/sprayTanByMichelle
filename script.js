@@ -3,7 +3,7 @@ const galleryNavBtn = document.getElementById('galleryBtn')
 const gallery = document.getElementById('galleryDiv')
 const containerDiv = document.getElementById('container')
 
-document.onload = gallery.classList.add('hide')
+
 
 galleryNavBtn.addEventListener('click', (event) =>{    
     if(gallery.classList.contains('hide')){
@@ -73,3 +73,20 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+const displayPhoneOrTxt = () =>{
+    const phoneNumberLink = document.getElementById('phoneNumber')
+    console.log(window.innerWidth)
+    if (window.innerWidth < 800) {
+        phoneNumberLink.innerText = 'Book Today'
+        return
+      } else {
+        phoneNumberLink.innerText = '253-691-2252'
+        return
+      }
+}
+
+  
+document.onload = gallery.classList.add('hide');
+document.onload = displayPhoneOrTxt();
