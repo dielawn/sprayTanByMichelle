@@ -358,6 +358,11 @@ li{
         width: 80vw;
     }
     .section{
-       gap: 100px;
-    }
+        margin: 0px 10vw 0px 10vw;
+        padding: 40px;
+        
+        border-radius: 20px;
+       
+        
+     }
 }
