@@ -83,6 +83,7 @@ const displayPhoneOrTxt = () =>{
         return
       } else {
         phoneNumberLink.innerText = '253-691-2252'
+        phoneNumberLink.style.outline = 'none'
         return
       }
 }
