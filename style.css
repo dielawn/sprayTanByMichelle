@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --mainFont: 'Poppins', sans-serif;
+    --grayColor:  rgb(0, 0, 0, 0.5);
+    --blueColor: #3e5063;
+    --tanColor: #D2B48C;
+    --bronzeColor: #cd7f32;
+}
+a:link.whiteTxt{
+    text-decoration: none;
+    color: white;
+    
+}
+a:link.blkTxt{
+    color: black;
+    text-decoration: none;
+}
+a:visited.whiteTxt{
+    color: white;
+}
+a:link, a:visited.whiteTxt{
+   color: white;
+    text-decoration: none;
+  
+  }
+ a:visited.blkTxt{
+    color: black;
+    text-decoration: none;
+  }
+body{
+    
+    font-family:var(--mainFont);
+    margin: 0;
+}
+
+.topImg{
+    display: flex;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.blur{
+    filter: blur(10px);
+}
+.bookBtn{
+    outline: solid white 1px;
+    width: fit-content;
+    padding: 5px;
+}
+.topContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    background-color:var(--bronzeColor);
+    padding: 25px;
+    color: white;
+
+
+   }
+ .sticky{
+    position: fixed;
+    top: 0;
+    width: 100%
+ }
+.chromaLogoImg{
+
+  max-width: 400px;
+} 
+.contactInfoDiv{
+    text-align: center;
+}
+.contact{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.first{
+    text-align: center;
+   
+}
+.prep{
+   
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+   
+}
+.navBar{
+    background-color:var(--bronzeColor);
+    display: flex;
+    justify-content: center; 
+    color: white;
+}
+
+.navLink{
+    
+    font-size: 1rem;
+    padding: 10px;
+}
+.navLink:hover{
+    background-color: var(--tanColor);
+   
+    cursor: pointer;
+}
+.header{
+    font-family: var(--mainFont);
+   
+}
+.whiteTxt{
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+.socialLink{
+    height: 20px;
+     margin: 1px;
+ }
+ .imageDiv{
+    text-align: center;
+ }
+ .section{
+    margin: 0px 20vw 0px 20vw;
+    padding: 50px;
+    background-color: white;
+    border-radius: 20px;
+   
+    
+ }
+
+ .parallax {  
+    background-image: url(images/pexels-mikhail-nilov-8157984.jpg);
+    min-height: 84vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2{
+    background-image: url(images/pexels-jess-loiterton-7510549.jpg);
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.parallax3{
+    background-image: url(images/pexels-mikhail-nilov-8158596.jpg);
+    min-height: 84vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.transbox{
+    padding: 0px;
+    margin: 0px;
+   background-color: transparent;
+}
+.headline{
+    font-size: 3rem;
+    font-family: 'Prompt', sans-serif;
+   color: white;
+
+}
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.products>img{
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.hide{
+    display: none;
+}
+.flex{
+    display: flex;
+}
+.gallery{
+    position: fixed;
+    top: 30vh;
+    left: 20vw;
+    right: 0;
+    bottom: 0;
+    width: 60vw;
+    max-height: fit-content;
+   flex-wrap: wrap;
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.clientImg{
+    width: auto;
+    max-height: 180px;
+    object-fit: cover;
+}
+.disable-scroll{
+    overflow-y: hidden;
+}
+@media screen and (max-width: 800px) {
+
+
+    .address{
+        display: none;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+    }
+}
