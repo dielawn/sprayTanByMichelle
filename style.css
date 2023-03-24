@@ -111,7 +111,7 @@ body{
     border: none;
     outline: none;
     position: fixed;
-    background-color: var(--blueColor);
+    background-color: var(--bronzeColor);
     color: black;
    
     display: flex;
@@ -400,7 +400,7 @@ li{
     .section{
         flex-direction: column;
         padding: 40px;
-        
+        margin: 0px 7vw 50px 7vw;
         border-radius: 20px;
        
         
@@ -408,11 +408,12 @@ li{
      .productImg{
         max-width: 400px;
      }
-     .sticky{
-        position: absolute;
-     }
+   
      .bio-pic{
        align-self: center;
        
+     }
+     .gap{
+        height: 32vh;
      }
 }
