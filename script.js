@@ -21,6 +21,7 @@ const openGallery = (event) =>{
     gallery.classList.remove('hide')
     gallery.classList.add('flex')
     containerDiv.classList.add('blur')
+    
     document.documentElement.style.overflow = 'hidden';
     document.body.style.overflow = 'hidden';
     gallery.style.overflowY = 'auto';

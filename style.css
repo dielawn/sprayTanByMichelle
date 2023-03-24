@@ -213,7 +213,9 @@ li{
 .bio-pic{
     width: 175px;
     padding: 20px;
+    
 }
+
 .center{
     align-content: center;
     text-align: center;
@@ -234,13 +236,6 @@ li{
     flex-direction: column;
 }
 
-.galleryContainer{
-    width: 100vw;  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
 
 .hiddenOverflow{
     overflow: hidden;
@@ -389,8 +384,16 @@ li{
         max-width: 80%;
         top: 50%;
         transform: translateY(-50%);
+        transform: translateX(3%);
       }
     
+.galleryContainer{
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
     .section{
         flex-direction: column;
         padding: 40px;
