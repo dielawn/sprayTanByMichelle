@@ -94,3 +94,13 @@ function showSlides(n) {
 document.onload = gallery.classList.add('hide');
 // document.onload = displayPhoneOrTxt();
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    let topBtn = document.getElementById('topBtn')
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+}
