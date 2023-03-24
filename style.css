@@ -353,64 +353,60 @@ li{
 }
 .contactInfoDiv{
     justify-content: center;
-
-
 }
 .contactInfoDiv img{
     margin: 0px 20px 0px 20px;
 }
-
+.prev{
+    position: absolute;
+    left: 5px;
+}
 
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
   }
 @media screen and (max-width: 800px) {
-.topContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-
-}
-  .address{
+    .topContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .address{
         display: none;
     }
     .products{
         display: flex;
         flex-direction: column;
-    }
+    }    
     .gallery {
         max-width: 80%;
         top: 50%;
         transform: translateY(-50%);
         transform: translateX(3%);
-      }
-    
-.galleryContainer{
-    width: 100%;  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
+    }
+    .galleryContainer{
+        width: 100%;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
     .section{
         flex-direction: column;
         padding: 40px;
         margin: 0px 7vw 50px 7vw;
         border-radius: 20px;
-       
-        
-     }
-     .productImg{
+    }
+    .productImg{
         max-width: 400px;
-     }
-   
-     .bio-pic{
-       align-self: center;
+    }
+    .bio-pic{
+        align-self: center;
        
-     }
-     .gap{
+    }
+    .gap{
         height: 32vh;
-     }
+    }
 }
