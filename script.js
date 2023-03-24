@@ -75,19 +75,22 @@ function showSlides(n) {
 }
 
 
-const displayPhoneOrTxt = () =>{
-    const phoneNumberLink = document.getElementById('phoneNumber')
-    console.log(window.innerWidth)
-    if (window.innerWidth < 800) {
-        phoneNumberLink.innerText = 'Book Today'
-        return
-      } else {
-        phoneNumberLink.innerText = '253-691-2252'
-        phoneNumberLink.style.outline = 'none'
-        return
-      }
-}
+// const displayPhoneOrTxt = () =>{
+//     const phoneNumberLink = document.getElementById('phoneNumber')
+//     let topElement = document.getElementById('topest')
+//     console.log(window.innerWidth)
+//     if (window.innerWidth < 800) {
+//         phoneNumberLink.innerText = 'Book Today'
+//         topElement.classList.remove = 'sticky'
+//         return
+//       } else {
+//         phoneNumberLink.innerText = '253-691-2252'
+//         phoneNumberLink.style.outline = 'none'
+//         return
+//       }
+// }
 
   
 document.onload = gallery.classList.add('hide');
-document.onload = displayPhoneOrTxt();
+// document.onload = displayPhoneOrTxt();
+

@@ -27,57 +27,74 @@ a:link, a:visited.whiteTxt{
     text-decoration: none;
   
   }
- a:visited.blkTxt{
+a:visited.blkTxt{
     color: black;
     text-decoration: none;
   }
-body{
+body{    
+    background-image: url(images/pexels-mikhail-nilov-8157984.jpg);
     
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family:var(--mainFont);
     margin: 0;
+    position: absolute;
 }
 
 .topImg{
     display: flex;
-
-    display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .blur{
     filter: blur(10px);
 }
 .bookBtn{
-    outline: solid white 1px;
+  
     width: fit-content;
-    padding: 5px;
+    padding: 3px;
+    margin: 1px;
 }
 .topContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-content: center;
     justify-content: center;
-    background-color:var(--bronzeColor);
-    padding: 25px;
+   
+    padding: 5px;
     color: white;
-
-
-   }
- .sticky{
+}
+.raylessLogo{
+    font-family: 'Poiret One', cursive;
+    font-size: 3rem;
+}
+.sticky{
     position: fixed;
     top: 0;
     width: 100%
  }
 .chromaLogoImg{
-display: flex;
-  max-width: 400px;
-
+    display: flex;
+    max-width: 150px;
 } 
+.imageDiv{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+}
 .contactInfoDiv{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
     text-align: center;
 }
+
 .contact{
     text-align: center;
     display: flex;
@@ -88,40 +105,44 @@ display: flex;
 }
 
 .first{
-    text-align: center;
-   
+    text-align: center;   
 }
-.prep{
-   
+
+.prep{   
     display: flex;
     align-items: start;
-    flex-direction: column;
-   
+    flex-direction: column;   
 }
 .navBar{
-    background-color:var(--bronzeColor);
+ 
     display: flex;
     justify-content: center; 
     color: white;
+    font-weight: 600;
+    
 }
 
-.navLink{
-    
+.navLink{    
     font-size: 1rem;
     padding: 10px;
 }
+.address:hover,
+.bookBtn:hover,
 .navLink:hover{
     background-color: var(--tanColor);
-   
     cursor: pointer;
+}
+.gap{
+    height: 60vh;
 }
 .header{
     font-family: var(--mainFont);
 }
+
 .sectionHeader{
     font-family: var(--mainFont);
-   padding: 7px;
-   margin-left: 50px;
+    padding: 7px;
+    margin-left: 50px;
 }
 .whiteTxt{
     color: white;
@@ -132,66 +153,39 @@ li{
 }
 .socialLink{
     height: 20px;
-     margin: 1px;
- }
- .imageDiv{
-    display: flex;
-    text-align: center;
-    justify-content: center;
- }
+    margin: 1px;
+}
+
  .section{
-    margin: 0px 20vw 0px 20vw;
+    margin: 0px 20vw 50px 20vw;
     padding: 50px;
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.7);
     border-radius: 20px;
-   
     
  }
 
- .parallax {  
-    background-image: url(images/pexels-mikhail-nilov-8157984.jpg);
-    min-height: 84vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.parallax2{
-    background-image: url(images/pexels-jess-loiterton-7510549.jpg);
-    min-height: 50vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-.parallax3{
-    background-image: url(images/pexels-mikhail-nilov-8158596.jpg);
-    min-height: 50vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.transbox{
+
+ .transbox{
     padding: 0px;
     margin: 0px;
-   background-color: transparent;
+  
+    background-color: transparent;
 }
 .headline{
     font-size: 3rem;
     font-family: 'Prompt', sans-serif;
-   color: white;
-
+    color: white;
 }
+
 .products{
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 25px;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
+   
 }
+
 .products>img{
     border-radius: 10px;
     margin: 20px;
@@ -200,24 +194,39 @@ li{
 .hide{
     display: none;
 }
+
 .flex{
     display: flex;
+}
+
+.bio-pic{
+    width: 175px;
+    padding: 20px;
+}
+.center{
+    align-content: center;
+    text-align: center;
+    justify-content: center;
 }
 .gallery{
     position: fixed;
     top: 30%;
-    left: 40%;;
+    left: 0;
     right: 0;
     bottom: 0;
-    max-width: 400px;
+    margin: auto;
+    width: 500px;
     max-height: fit-content;
-   flex-direction: column;
     background-color: black;
     padding: 25px;
     text-align: center;
-   
+ 
+    flex-direction: column;
 }
+
 .galleryContainer{
+    width: 100vw;
+  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -240,21 +249,20 @@ li{
     width: 30px;
     height: 30px;
     display: flex;
-    justify-content: center;
-  
+    justify-content: center;  
     align-items: center;
     position: fixed; /* Fixed/sticky position */
-  bottom: 20vh; /* Place the button at the bottom of the page */
-  right: 10vw; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
+    bottom: 20vh; /* Place the button at the bottom of the page */
+    right: 10vw; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
 }
 /* Hide the images by default */
 .mySlides {
     display: none;
-  }
+}
   
   /* Next & previous buttons */
-  .prev, .next {
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -267,21 +275,21 @@ li{
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
+}
   
   /* Position the "next button" to the right */
-  .next {
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
+.prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-  }
+}
   
   /* Caption text */
-  .text {
+.text {
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
@@ -289,19 +297,19 @@ li{
     bottom: 8px;
     width: 100%;
     text-align: center;
-  }
+}
   
   /* Number text (1/3 etc) */
-  .numbertext {
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
+}
   
   /* The dots/bullets/indicators */
-  .dot {
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -310,9 +318,9 @@ li{
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+}
 
-  }
-  .x{
+.x {
     font-size: 18px;
     background-color: var(--bronzeColor);
     border-radius: 5px;
@@ -321,25 +329,27 @@ li{
     padding: 5px;
     cursor: pointer;
     display: inline;
-  }
-  .active, .dot:hover {
+}
+.active, .dot:hover {
     background-color: #717171;
-  }
+}
   
   /* Fading animation */
-  .fade {
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
+}
 
-  .footer{
+.footer{
     display: flex;
     justify-content: space-around;
     padding: 10px;
     font-size: 12px;
-  }
-  
-  @keyframes fade {
+}
+
+
+
+@keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
   }
@@ -347,6 +357,9 @@ li{
 .topContainer{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
 }
 .parallax {  
     min-height: 50vh;
@@ -358,16 +371,14 @@ li{
         display: flex;
         flex-direction: column;
     }
-    .gallery{
-        position: fixed;
-        top: 30vh;
-        left: 5vw;
-    right: 0;
-    bottom: 0;
-        width: 80vw;
-    }
+    .gallery {
+        max-width: 80%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    
     .section{
-        margin: 0px 10vw 0px 10vw;
+        flex-direction: column;
         padding: 40px;
         
         border-radius: 20px;
@@ -376,5 +387,12 @@ li{
      }
      .productImg{
         max-width: 400px;
+     }
+     .sticky{
+        position: absolute;
+     }
+     .bio-pic{
+       align-self: center;
+       
      }
 }
