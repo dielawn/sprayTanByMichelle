@@ -228,14 +228,14 @@ li{
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 500px;
     max-height: fit-content;
     background-color: black;
     padding: 25px;
     text-align: center; 
     flex-direction: column;
+    width: 600px;
+    border-radius: 10px;
 }
-
 
 .hiddenOverflow{
     overflow: hidden;
@@ -243,6 +243,7 @@ li{
 .clientImg{
     max-height: 200px;
     object-fit: cover;
+    
 }
 .disable-scroll{
     overflow-y: hidden;
@@ -264,6 +265,7 @@ li{
 /* Hide the images by default */
 .mySlides {
     display: none;
+   
 }
   
   /* Next & previous buttons */
@@ -272,7 +274,6 @@ li{
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
     padding: 16px;
     color: white;
     font-weight: bold;
@@ -357,10 +358,6 @@ li{
 .contactInfoDiv img{
     margin: 0px 20px 0px 20px;
 }
-.prev{
-    position: absolute;
-    left: 5px;
-}
 
 @keyframes fade {
     from {opacity: .4}
@@ -381,7 +378,7 @@ li{
         flex-direction: column;
     }    
     .gallery {
-        max-width: 80%;
+       width: 80%;
         top: 50%;
         transform: translateY(-50%);
         transform: translateX(3%);
