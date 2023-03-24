@@ -72,11 +72,7 @@ body{
     font-family: 'Poiret One', cursive;
     font-size: 3rem;
 }
-.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%
- }
+
 .chromaLogoImg{
     display: flex;
     max-width: 150px;
@@ -112,13 +108,12 @@ body{
     outline: none;
     position: fixed;
     background-color: var(--bronzeColor);
-    color: black;
-   
+    color: black;   
     display: flex;
     align-items: center;
     justify-content: center;
     bottom: 20px;
-  right: 30px;
+    right: 30px;
 }
 .first{
     text-align: center;   
@@ -129,13 +124,11 @@ body{
     align-items: start;
     flex-direction: column;   
 }
-.navBar{
- 
+.navBar{ 
     display: flex;
     justify-content: center; 
     color: white;
-    font-weight: 600;
-    
+    font-weight: 600;    
 }
 
 .navLink{    
@@ -180,13 +173,12 @@ li{
     
  }
 
-
  .transbox{
     padding: 0px;
-    margin: 0px;
-  
+    margin: 0px;  
     background-color: transparent;
 }
+
 .headline{
     font-size: 3rem;
     font-family: 'Prompt', sans-serif;
@@ -198,8 +190,7 @@ li{
     grid-template-columns: auto auto auto;
     padding: 25px;
     justify-content: center;
-    align-items: center;    
-   
+    align-items: center;       
 }
 
 .products>img{
@@ -235,19 +226,18 @@ li{
     max-height: fit-content;
     background-color: black;
     padding: 25px;
-    text-align: center;
- 
+    text-align: center; 
     flex-direction: column;
 }
 
 .galleryContainer{
-    width: 100vw;
-  
+    width: 100vw;  
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
+
 .hiddenOverflow{
     overflow: hidden;
 }
