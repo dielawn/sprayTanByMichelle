@@ -346,7 +346,14 @@ li{
     padding: 10px;
     font-size: 12px;
 }
+.contactInfoDiv{
+    justify-content: center;
 
+
+}
+.contactInfoDiv img{
+    margin: 0px 20px 0px 20px;
+}
 
 
 @keyframes fade {
@@ -361,10 +368,7 @@ li{
     align-content: center;
 
 }
-.parallax {  
-    min-height: 50vh;
-}
-    .address{
+  .address{
         display: none;
     }
     .products{
