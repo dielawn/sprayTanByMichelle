@@ -41,6 +41,7 @@ body{
     font-family:var(--mainFont);
     margin: 0;
     position: absolute;
+    max-width: 100%;
 }
 
 .topImg{
