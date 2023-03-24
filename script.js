@@ -95,12 +95,18 @@ document.onload = gallery.classList.add('hide');
 // document.onload = displayPhoneOrTxt();
 
 window.onscroll = function() {scrollFunction()};
-
+let topBtn = document.getElementById('topBtn')
+topBtn.classList.add('displayNone')
 function scrollFunction() {
-    let topBtn = document.getElementById('topBtn')
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    topBtn.style.display = "block";
+   
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+
+    topBtn.classList.remove('displayNone')
+    topBtn.classList.add('flex')
+    
   } else {
-    topBtn.style.display = "none";
+    topBtn.classList.remove('flex')
+    topBtn.classList.add("displayNone");
+    
   }
 }

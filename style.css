@@ -41,7 +41,8 @@ body{
     font-family:var(--mainFont);
     margin: 0;
     position: absolute;
-    max-width: 100%;
+    width: 100%;
+    z-index: -1;
 }
 
 .topImg{
@@ -109,11 +110,15 @@ body{
     position: fixed;
     background-color: var(--bronzeColor);
     color: black;   
-    display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
+    display: flex;
     bottom: 20px;
     right: 30px;
+}
+.displayNone{
+    display: none;
 }
 .first{
     text-align: center;   
