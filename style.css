@@ -223,10 +223,10 @@ li{
 }
 .gallery{
     position: fixed;
-    top: 30%;
+    top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 30%;
     margin: auto;
     max-height: fit-content;
     background-color: black;
@@ -370,19 +370,8 @@ li{
         display: flex;
         flex-direction: column;
     }    
-    .gallery {
-       width: 80%;
-        top: 50%;
-        transform: translateY(-50%);
-        transform: translateX(3%);
-    }
-    .galleryContainer{
-        width: 100%;  
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
+   
+ 
     .section{
         flex-direction: column;
         padding: 40px;
