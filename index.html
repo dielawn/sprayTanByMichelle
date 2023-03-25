@@ -163,7 +163,6 @@
 <div class="galleryContainer">
     
 <div class="gallery" id="galleryDiv">
- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> 
     
     <div class="mySlides fade">
         <div class="numbertext">1 / 9</div>
@@ -210,12 +209,13 @@
         <img src="images/DSCN1406edit.JPG" alt="" class="clientImg"><br>
         
       </div>
-      <div class="container"><a class="next" onclick="plusSlides(1)">&#10095;</a></div>
+      
       
      
       
    
-      <div>
+      <div class="galleryBtnDiv">
+        <span class="prevNext" onclick="plusSlides(-1)">&#10094;</span>
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
@@ -225,8 +225,8 @@
         <span class="dot" onclick="currentSlide(7)"></span>
         <span class="dot" onclick="currentSlide(8)"></span>
         <span class="dot" onclick="currentSlide(9)"></span>
-      
-        <span class="x" onclick="closeGallery(event)">Close</span>
+        <span class="prevNext" onclick="plusSlides(1)">&#10095;</span><br>
+        <div class="closeBtnDiv"><span class="x" onclick="closeGallery(event)">Close</span></div>
         
       </div>
     
